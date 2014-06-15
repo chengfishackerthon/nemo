@@ -47,10 +47,6 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
     self.delegate = self;
     [self registerForKeyboardNotifications];
     [self setTextFieldDelegates];
-
-    self.locationManager = [FSHLocationManager sharedInstance];
-    [self.locationManager startLocationUpdates];
-    self.locationManager.delegate = self;
 }
 
 - (void)setTextFieldDelegates
@@ -162,8 +158,15 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
 
 }
 
++ (NSString *)urlEncode:(NSString *)string
+{
+    // Based on: http://stackoverflow.com/questions/2590545/urlencoding-a-string-with-objective-c
+    NSString *encodedString = (__bridge_transfer NSString *)CFURLCreateStringByAddingPercentEscapes( NULL, (__bridge CFStringRef)string, NULL, (__bridge CFStringRef)@"!’\"();:@&=+$,/?%#[]% ", kCFStringEncodingISOLatin1);
+    return encodedString;
+}
+
 - (IBAction)submit:(id)sender {
-    NSString *url = [NSString stringWithFormat:@"%@/submit?latitude=%f&longitude=%f&vessel_id=%@&fishes=%@", kServer, self.location.coordinate.latitude, self.location.coordinate.longitude, self.vessel.vesselID, self.fish.text];
+    NSString *url = [NSString stringWithFormat:@"%@/submit?latitude=%f&longitude=%f&vessel_id=%@&fishes=%@", kServer, self.location.coordinate.latitude, self.location.coordinate.longitude, [FSHCatchInfoViewController urlEncode:self.vessel.vesselID], [FSHCatchInfoViewController urlEncode:self.fish.text]];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url]
                                                            cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
                                                        timeoutInterval:10];
@@ -176,8 +179,8 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
 
     NSData *response1 = [NSURLConnection sendSynchronousRequest:request returningResponse:&urlResponse error:&requestError];
 
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location selected"
-                                                    message:@"Location selected"
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Submitted"
+                                                    message:@"Your request has been submitted"
                                                    delegate:self
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
@@ -192,6 +195,9 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
 }
 
 - (IBAction)getLocation:(id)sender {
+    self.locationManager = [FSHLocationManager sharedInstance];
+    [self.locationManager startLocationUpdates];
+    self.locationManager.delegate = self;
     self.updateLocation = YES;
 }
 
