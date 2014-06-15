@@ -22,6 +22,24 @@
 		1301E3B4194C24AF0041290E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1301E393194C24AF0041290E /* UIKit.framework */; };
 		1301E3BC194C24AF0041290E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1301E3BA194C24AF0041290E /* InfoPlist.strings */; };
 		1301E3BE194C24AF0041290E /* nemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3BD194C24AF0041290E /* nemoTests.m */; };
+		1301E3CF194C2CAA0041290E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1301E3CE194C2CAA0041290E /* CoreLocation.framework */; };
+		1301E3D2194C2E6D0041290E /* FSHCatchInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3D1194C2E6D0041290E /* FSHCatchInfoViewController.m */; };
+		1301E3DB194C53600041290E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1301E3DA194C53600041290E /* MapKit.framework */; };
+		1301E3E0194C5CC30041290E /* fish.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1301E3DE194C5CC30041290E /* fish.jpeg */; };
+		1301E3E1194C5CC30041290E /* net.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1301E3DF194C5CC30041290E /* net.jpg */; };
+		1301E3E4194C5CF20041290E /* FSHMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3E3194C5CF20041290E /* FSHMapAnnotation.m */; };
+		1301E3E7194CB76E0041290E /* FSHLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3E6194CB76E0041290E /* FSHLocationManager.m */; };
+		1301E3EA194CCC510041290E /* FSHSelectLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3E9194CCC510041290E /* FSHSelectLocationViewController.m */; };
+		1301E3F0194CDAFB0041290E /* FSHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3EF194CDAFB0041290E /* FSHLocation.m */; };
+		1301E3F2194CF7B20041290E /* query.json in Resources */ = {isa = PBXBuildFile; fileRef = 1301E3F1194CF7B20041290E /* query.json */; };
+		1301E3F5194D1FC70041290E /* FSHFish.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3F4194D1FC70041290E /* FSHFish.m */; };
+		1301E3FB194D26C40041290E /* FSHSelectFishTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3FA194D26C40041290E /* FSHSelectFishTableViewController.m */; };
+		1301E3FE194D4F980041290E /* FSHTrackingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E3FD194D4F980041290E /* FSHTrackingViewController.m */; };
+		1301E400194D57030041290E /* OCEAN.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1301E3FF194D57030041290E /* OCEAN.jpeg */; };
+		1301E402194D6A170041290E /* 74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = 1301E401194D6A170041290E /* 74-location.png */; };
+		1301E409194D8E850041290E /* FSHFishTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E407194D8E850041290E /* FSHFishTableViewCell.m */; };
+		1301E40D194D9BF50041290E /* FSHWebDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E40C194D9BF50041290E /* FSHWebDetailViewController.m */; };
+		1301E410194DDD060041290E /* FSHVessel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1301E40F194DDD060041290E /* FSHVessel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +65,43 @@
 		1301E39F194C24AF0041290E /* FSHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSHAppDelegate.m; sourceTree = "<group>"; };
 		1301E3A2194C24AF0041290E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		1301E3A5194C24AF0041290E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		1301E3A7194C24AF0041290E /* FSHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSHViewController.h; sourceTree = "<group>"; };
-		1301E3A8194C24AF0041290E /* FSHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSHViewController.m; sourceTree = "<group>"; };
+		1301E3A7194C24AF0041290E /* FSHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FSHViewController.h; path = nemo/FSHViewController.h; sourceTree = "<group>"; };
+		1301E3A8194C24AF0041290E /* FSHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = FSHViewController.m; path = nemo/FSHViewController.m; sourceTree = "<group>"; };
 		1301E3AA194C24AF0041290E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1301E3B0194C24AF0041290E /* nemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1301E3B1194C24AF0041290E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1301E3B9194C24AF0041290E /* nemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "nemoTests-Info.plist"; sourceTree = "<group>"; };
 		1301E3BB194C24AF0041290E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1301E3BD194C24AF0041290E /* nemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nemoTests.m; sourceTree = "<group>"; };
+		1301E3CE194C2CAA0041290E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1301E3D0194C2E6D0041290E /* FSHCatchInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHCatchInfoViewController.h; path = nemo/Controllers/FSHCatchInfoViewController.h; sourceTree = "<group>"; };
+		1301E3D1194C2E6D0041290E /* FSHCatchInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHCatchInfoViewController.m; path = nemo/Controllers/FSHCatchInfoViewController.m; sourceTree = "<group>"; };
+		1301E3DA194C53600041290E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1301E3DE194C5CC30041290E /* fish.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = fish.jpeg; path = nemo/Resources/fish.jpeg; sourceTree = "<group>"; };
+		1301E3DF194C5CC30041290E /* net.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = net.jpg; path = nemo/Resources/net.jpg; sourceTree = "<group>"; };
+		1301E3E2194C5CF20041290E /* FSHMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHMapAnnotation.h; path = nemo/Models/FSHMapAnnotation.h; sourceTree = "<group>"; };
+		1301E3E3194C5CF20041290E /* FSHMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHMapAnnotation.m; path = nemo/Models/FSHMapAnnotation.m; sourceTree = "<group>"; };
+		1301E3E5194CB76E0041290E /* FSHLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHLocationManager.h; path = nemo/Controllers/FSHLocationManager.h; sourceTree = "<group>"; };
+		1301E3E6194CB76E0041290E /* FSHLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHLocationManager.m; path = nemo/Controllers/FSHLocationManager.m; sourceTree = "<group>"; };
+		1301E3E8194CCC510041290E /* FSHSelectLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHSelectLocationViewController.h; path = nemo/Controllers/FSHSelectLocationViewController.h; sourceTree = "<group>"; };
+		1301E3E9194CCC510041290E /* FSHSelectLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHSelectLocationViewController.m; path = nemo/Controllers/FSHSelectLocationViewController.m; sourceTree = "<group>"; };
+		1301E3EE194CDAFB0041290E /* FSHLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHLocation.h; path = nemo/Models/FSHLocation.h; sourceTree = "<group>"; };
+		1301E3EF194CDAFB0041290E /* FSHLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHLocation.m; path = nemo/Models/FSHLocation.m; sourceTree = "<group>"; };
+		1301E3F1194CF7B20041290E /* query.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = query.json; sourceTree = "<group>"; };
+		1301E3F3194D1FC70041290E /* FSHFish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHFish.h; path = nemo/Models/FSHFish.h; sourceTree = "<group>"; };
+		1301E3F4194D1FC70041290E /* FSHFish.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHFish.m; path = nemo/Models/FSHFish.m; sourceTree = "<group>"; };
+		1301E3F9194D26C40041290E /* FSHSelectFishTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHSelectFishTableViewController.h; path = nemo/Controllers/FSHSelectFishTableViewController.h; sourceTree = "<group>"; };
+		1301E3FA194D26C40041290E /* FSHSelectFishTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHSelectFishTableViewController.m; path = nemo/Controllers/FSHSelectFishTableViewController.m; sourceTree = "<group>"; };
+		1301E3FC194D4F980041290E /* FSHTrackingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHTrackingViewController.h; path = nemo/Controllers/FSHTrackingViewController.h; sourceTree = "<group>"; };
+		1301E3FD194D4F980041290E /* FSHTrackingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHTrackingViewController.m; path = nemo/Controllers/FSHTrackingViewController.m; sourceTree = "<group>"; };
+		1301E3FF194D57030041290E /* OCEAN.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = OCEAN.jpeg; sourceTree = "<group>"; };
+		1301E401194D6A170041290E /* 74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "74-location.png"; sourceTree = "<group>"; };
+		1301E406194D8E850041290E /* FSHFishTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHFishTableViewCell.h; path = nemo/FSHFishTableViewCell.h; sourceTree = "<group>"; };
+		1301E407194D8E850041290E /* FSHFishTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHFishTableViewCell.m; path = nemo/FSHFishTableViewCell.m; sourceTree = "<group>"; };
+		1301E40B194D9BF50041290E /* FSHWebDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHWebDetailViewController.h; path = nemo/Controllers/FSHWebDetailViewController.h; sourceTree = "<group>"; };
+		1301E40C194D9BF50041290E /* FSHWebDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHWebDetailViewController.m; path = nemo/Controllers/FSHWebDetailViewController.m; sourceTree = "<group>"; };
+		1301E40E194DDD060041290E /* FSHVessel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSHVessel.h; path = nemo/Models/FSHVessel.h; sourceTree = "<group>"; };
+		1301E40F194DDD060041290E /* FSHVessel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSHVessel.m; path = nemo/Models/FSHVessel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +109,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1301E3CF194C2CAA0041290E /* CoreLocation.framework in Frameworks */,
 				1301E392194C24AF0041290E /* CoreGraphics.framework in Frameworks */,
+				1301E3DB194C53600041290E /* MapKit.framework in Frameworks */,
 				1301E394194C24AF0041290E /* UIKit.framework in Frameworks */,
 				1301E390194C24AF0041290E /* Foundation.framework in Frameworks */,
 			);
@@ -84,6 +133,10 @@
 		1301E383194C24AF0041290E = {
 			isa = PBXGroup;
 			children = (
+				1301E3DD194C5C9B0041290E /* Models */,
+				1301E3DC194C5C6A0041290E /* View */,
+				1301E3D3194C37D60041290E /* Resources */,
+				1301E3C7194C24CB0041290E /* Controllers */,
 				1301E395194C24AF0041290E /* nemo */,
 				1301E3B7194C24AF0041290E /* nemoTests */,
 				1301E38E194C24AF0041290E /* Frameworks */,
@@ -103,6 +156,8 @@
 		1301E38E194C24AF0041290E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1301E3DA194C53600041290E /* MapKit.framework */,
+				1301E3CE194C2CAA0041290E /* CoreLocation.framework */,
 				1301E38F194C24AF0041290E /* Foundation.framework */,
 				1301E391194C24AF0041290E /* CoreGraphics.framework */,
 				1301E393194C24AF0041290E /* UIKit.framework */,
@@ -116,10 +171,6 @@
 			children = (
 				1301E39E194C24AF0041290E /* FSHAppDelegate.h */,
 				1301E39F194C24AF0041290E /* FSHAppDelegate.m */,
-				1301E3A1194C24AF0041290E /* Main_iPhone.storyboard */,
-				1301E3A4194C24AF0041290E /* Main_iPad.storyboard */,
-				1301E3A7194C24AF0041290E /* FSHViewController.h */,
-				1301E3A8194C24AF0041290E /* FSHViewController.m */,
 				1301E3AA194C24AF0041290E /* Images.xcassets */,
 				1301E396194C24AF0041290E /* Supporting Files */,
 			);
@@ -153,6 +204,65 @@
 				1301E3BA194C24AF0041290E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1301E3C7194C24CB0041290E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1301E3E5194CB76E0041290E /* FSHLocationManager.h */,
+				1301E3E6194CB76E0041290E /* FSHLocationManager.m */,
+				1301E3A7194C24AF0041290E /* FSHViewController.h */,
+				1301E3A8194C24AF0041290E /* FSHViewController.m */,
+				1301E3D0194C2E6D0041290E /* FSHCatchInfoViewController.h */,
+				1301E3D1194C2E6D0041290E /* FSHCatchInfoViewController.m */,
+				1301E3F9194D26C40041290E /* FSHSelectFishTableViewController.h */,
+				1301E3FA194D26C40041290E /* FSHSelectFishTableViewController.m */,
+				1301E3E8194CCC510041290E /* FSHSelectLocationViewController.h */,
+				1301E3E9194CCC510041290E /* FSHSelectLocationViewController.m */,
+				1301E3FC194D4F980041290E /* FSHTrackingViewController.h */,
+				1301E3FD194D4F980041290E /* FSHTrackingViewController.m */,
+				1301E40B194D9BF50041290E /* FSHWebDetailViewController.h */,
+				1301E40C194D9BF50041290E /* FSHWebDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1301E3D3194C37D60041290E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1301E3FF194D57030041290E /* OCEAN.jpeg */,
+				1301E401194D6A170041290E /* 74-location.png */,
+				1301E3DE194C5CC30041290E /* fish.jpeg */,
+				1301E3DF194C5CC30041290E /* net.jpg */,
+				1301E3F1194CF7B20041290E /* query.json */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1301E3DC194C5C6A0041290E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1301E3A1194C24AF0041290E /* Main_iPhone.storyboard */,
+				1301E3A4194C24AF0041290E /* Main_iPad.storyboard */,
+				1301E406194D8E850041290E /* FSHFishTableViewCell.h */,
+				1301E407194D8E850041290E /* FSHFishTableViewCell.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1301E3DD194C5C9B0041290E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1301E3E2194C5CF20041290E /* FSHMapAnnotation.h */,
+				1301E3E3194C5CF20041290E /* FSHMapAnnotation.m */,
+				1301E3EE194CDAFB0041290E /* FSHLocation.h */,
+				1301E3EF194CDAFB0041290E /* FSHLocation.m */,
+				1301E3F3194D1FC70041290E /* FSHFish.h */,
+				1301E3F4194D1FC70041290E /* FSHFish.m */,
+				1301E40E194DDD060041290E /* FSHVessel.h */,
+				1301E40F194DDD060041290E /* FSHVessel.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +313,16 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Fishackathon;
 				TargetAttributes = {
+					1301E38B194C24AF0041290E = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					1301E3AF194C24AF0041290E = {
 						TestTargetID = 1301E38B194C24AF0041290E;
 					};
@@ -233,8 +353,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1301E3A6194C24AF0041290E /* Main_iPad.storyboard in Resources */,
+				1301E402194D6A170041290E /* 74-location.png in Resources */,
 				1301E3AB194C24AF0041290E /* Images.xcassets in Resources */,
 				1301E3A3194C24AF0041290E /* Main_iPhone.storyboard in Resources */,
+				1301E3E0194C5CC30041290E /* fish.jpeg in Resources */,
+				1301E400194D57030041290E /* OCEAN.jpeg in Resources */,
+				1301E3E1194C5CC30041290E /* net.jpg in Resources */,
+				1301E3F2194CF7B20041290E /* query.json in Resources */,
 				1301E39A194C24AF0041290E /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,9 +379,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1301E3E7194CB76E0041290E /* FSHLocationManager.m in Sources */,
+				1301E3F5194D1FC70041290E /* FSHFish.m in Sources */,
+				1301E3FE194D4F980041290E /* FSHTrackingViewController.m in Sources */,
+				1301E40D194D9BF50041290E /* FSHWebDetailViewController.m in Sources */,
 				1301E3A0194C24AF0041290E /* FSHAppDelegate.m in Sources */,
+				1301E410194DDD060041290E /* FSHVessel.m in Sources */,
+				1301E3F0194CDAFB0041290E /* FSHLocation.m in Sources */,
+				1301E3EA194CCC510041290E /* FSHSelectLocationViewController.m in Sources */,
+				1301E3FB194D26C40041290E /* FSHSelectFishTableViewController.m in Sources */,
 				1301E3A9194C24AF0041290E /* FSHViewController.m in Sources */,
+				1301E3D2194C2E6D0041290E /* FSHCatchInfoViewController.m in Sources */,
+				1301E3E4194C5CF20041290E /* FSHMapAnnotation.m in Sources */,
 				1301E39C194C24AF0041290E /* main.m in Sources */,
+				1301E409194D8E850041290E /* FSHFishTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +429,7 @@
 				1301E3A2194C24AF0041290E /* Base */,
 			);
 			name = Main_iPhone.storyboard;
+			path = nemo;
 			sourceTree = "<group>";
 		};
 		1301E3A4194C24AF0041290E /* Main_iPad.storyboard */ = {
@@ -301,6 +438,7 @@
 				1301E3A5194C24AF0041290E /* Base */,
 			);
 			name = Main_iPad.storyboard;
+			path = nemo;
 			sourceTree = "<group>";
 		};
 		1301E3BA194C24AF0041290E /* InfoPlist.strings */ = {
@@ -471,6 +609,7 @@
 				1301E3C3194C24AF0041290E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1301E3C4194C24AF0041290E /* Build configuration list for PBXNativeTarget "nemoTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +618,7 @@
 				1301E3C6194C24AF0041290E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

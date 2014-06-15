@@ -8,13 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FSHViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UITextField *vesselID;
-@property (weak, nonatomic) IBOutlet UITextField *engine;
-@property (weak, nonatomic) IBOutlet UITextField *hp;
-@property (weak, nonatomic) IBOutlet UITextField *length;
-@property (weak, nonatomic) IBOutlet UITextField *width;
-@property (weak, nonatomic) IBOutlet UITextField *height;
-@property (weak, nonatomic) IBOutlet UIButton *submit;
+@interface FSHViewController : UIViewController <UITextFieldDelegate>
+
+- (IBAction)dismissKeyboard:(id)sender;
 
 @end
