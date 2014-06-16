@@ -108,7 +108,7 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
     NSLog(@"way points %@", location.locationHistory);
     self.location = waypoint;
     [self updateMap];
-    [self.locationManager stopLocationUpdates];
+    //[self.locationManager stopLocationUpdates];
 }
 
 - (void)updateMap
