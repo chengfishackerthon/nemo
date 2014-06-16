@@ -47,6 +47,8 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
     self.delegate = self;
     [self registerForKeyboardNotifications];
     [self setTextFieldDelegates];
+
+//    [self.scrollView setContentSize:CGSizeMake(self.view.frame.size.width, self.view.frame.size.height)];
 }
 
 - (void)setTextFieldDelegates
@@ -228,8 +230,11 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
     // Your app might not need or want this behavior.
     CGRect aRect = self.view.frame;
     aRect.size.height -= kbSize.height;
-    if (!CGRectContainsPoint(aRect, self.activeField.frame.origin) ) {
-        [self.scrollView scrollRectToVisible:self.activeField.frame animated:YES];
+    if (self.activeField) {
+        if (!CGRectContainsPoint(aRect, self.activeField.frame.origin) ) {
+            [self.scrollView scrollRectToVisible:self.activeField.frame animated:NO];
+            //[self.scrollView setContentOffset:self.activeField.frame.origin animated:YES];
+        }
     }
 }
 
