@@ -31,9 +31,12 @@ static const NSString *kServer = @"http://172.16.1.126:9090";
 
 - (void)load
 {
-    NSString *str = [NSString stringWithFormat:@"%@/query?lat=%f&lon=%f", kServer, self.location.coordinate.latitude, self.location.coordinate.longitude];
-    NSURL *url = [NSURL URLWithString:str];
-    NSData *data = [NSData dataWithContentsOfURL:url];
+//    NSString *str = [NSString stringWithFormat:@"%@/query?lat=%f&lon=%f", kServer, self.location.coordinate.latitude, self.location.coordinate.longitude];
+//    NSURL *url = [NSURL URLWithString:str];
+//    NSData *data = [NSData dataWithContentsOfURL:url];
+
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"query" ofType:@"json"];
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
     NSError *error = nil;
     self.results = [NSJSONSerialization JSONObjectWithData:data
                                                    options:NSJSONReadingMutableContainers
